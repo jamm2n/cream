@@ -28,7 +28,7 @@
 
         renderer.outputEncoding = THREE.sRGBEncoding;
         let camera = new THREE.PerspectiveCamera(30, 1);
-        camera.position.set(-10, 0, 50);  // 카메라 위치 설정
+        camera.position.set(90, 0, 50);  // 카메라 위치 설정
         
         // OrbitControls를 추가합니다.
         let controls = new OrbitControls(camera, renderer.domElement);
@@ -37,7 +37,7 @@
 
         let loader = new GLTFLoader();
         loader.load('3d/cream.gltf', function (gltf) {
-	          gltf.scene.scale.set(5, 5, 5);
+	    gltf.scene.scale.set(10, 10, 10);
             scene.add(gltf.scene);
             scene.background = new THREE.Color('black');
             
