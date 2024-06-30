@@ -37,6 +37,7 @@
 
         let loader = new GLTFLoader();
         loader.load('3d/cream.gltf', function (gltf) {
+	          gltf.scene.scale.set(5, 5, 5);
             scene.add(gltf.scene);
             scene.background = new THREE.Color('black');
             
